@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.task3.org/cards"
+       xsi:schemaLocation="http://www.task3.org/cards schema.xsd">
+  <compact-post-card id="cpc1">
+    <theme> RELIGION</theme>
+    <year>1905</year>
+    <valuable> HISTORICAL</valuable>
+    <compact-post-code> 20054kpk</compact-post-code>
+  </compact-post-card>
+  <extended-post-card id="epc1">
+    <theme> PEOPLE</theme>
+    <year> 1944</year>
+    <valuable> COLLECTIBLE</valuable>
+    <card-type> CONGRATULATORY</card-type>
+    <country> GERMANY</country>
+    <author> Iron Hans</author>
+  </extended-post-card>
+</cards>

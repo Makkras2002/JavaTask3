@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.task3.org/cards" xmlns:tns="http://www.task3.org/cards">
+
+    <element name="cards">
+        <complexType>
+            <sequence>
+                <element ref="tns:post-card" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+
+    <complexType name="card">
+        <sequence>
+            <element name="theme" type="tns:themes" />
+            <element name="year" type="gYear" />
+            <element name="valuable" type="tns:valuables" />
+        </sequence>
+        <attribute name="id" type="tns:cardId" use="required"/>
+        <attribute name="was-sent" type="boolean" use="optional" default="true"/>
+    </complexType>
+
+    <complexType name="compact-post-card-type">
+        <complexContent>
+            <extension base="tns:card">
+                <sequence>
+                    <element name="compact-post-code" type="string"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="extended-post-card-type">
+        <complexContent>
+            <extension base="tns:card">
+                <sequence>
+                    <element name="card-type" type="tns:card-types" />
+                    <element name="country" type="tns:countries" />
+                    <element name="author" type="string"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="cardId">
+        <restriction base="ID">
+            <pattern value="\w{1,10}"/>
+        </restriction>
+    </simpleType>
+
+
+    <simpleType name="themes">
+        <restriction base="string">
+            <enumeration value="CITYSCAPE"/>
+            <enumeration value="NATURE"/>
+            <enumeration value="PEOPLE"/>
+            <enumeration value="RELIGION"/>
+            <enumeration value="SPORT"/>
+            <enumeration value="ARCHITECTURE"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="valuables">
+        <restriction base="string">
+            <enumeration value="HISTORICAL"/>
+            <enumeration value="COLLECTIBLE"/>
+            <enumeration value="THEMATIC"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="card-types">
+        <restriction base="string">
+            <enumeration value="CONGRATULATORY"/>
+            <enumeration value="ADVERTISING"/>
+            <enumeration value="REGULAR"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="countries">
+        <restriction base="string">
+            <enumeration value="RUSSIA"/>
+            <enumeration value="BELARUS"/>
+            <enumeration value="POLAND"/>
+            <enumeration value="GERMANY"/>
+            <enumeration value="USA"/>
+            <enumeration value="CANADA"/>
+            <enumeration value="UK"/>
+            <enumeration value="FRANCE"/>
+        </restriction>
+    </simpleType>
+
+
+    <element name="post-card" type="tns:card" abstract="true"/>
+    <element name="compact-post-card" type="tns:compact-post-card-type" substitutionGroup="tns:post-card"/>
+    <element name="extended-post-card" type="tns:extended-post-card-type" substitutionGroup="tns:post-card"/>
+</schema>
