@@ -1,20 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cards
+<res:cards
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns="http://www.task3.org/cards"
+       xmlns:res="http://www.task3.org/cards"
        xsi:schemaLocation="http://www.task3.org/cards schema.xsd">
-  <compact-post-card id="cpc1">
-    <theme> RELIGION</theme>
+  <res:compact-post-card id="cpc1" was-sent="false">
+    <theme>RELIGION</theme>
     <year>1905</year>
-    <valuable> HISTORICAL</valuable>
-    <compact-post-code> 20054kpk</compact-post-code>
-  </compact-post-card>
-  <extended-post-card id="epc1">
-    <theme> PEOPLE</theme>
-    <year> 1944</year>
-    <valuable> COLLECTIBLE</valuable>
-    <card-type> CONGRATULATORY</card-type>
-    <country> GERMANY</country>
+    <valuable>HISTORICAL</valuable>
+    <compact-post-code>20050</compact-post-code>
+  </res:compact-post-card>
+
+  <res:extended-post-card id="epc1" >
+    <theme>PEOPLE</theme>
+    <year>1944</year>
+    <valuable>COLLECTIBLE</valuable>
+    <card-type>CONGRATULATORY</card-type>
+    <country>GERMANY</country>
     <author> Iron Hans</author>
-  </extended-post-card>
-</cards>
+  </res:extended-post-card>
+
+  <res:compact-post-card id="cpc2" was-sent="false">
+    <theme>SPORT</theme>
+    <year>1955</year>
+    <valuable>THEMATIC</valuable>
+    <compact-post-code>40000</compact-post-code>
+  </res:compact-post-card>
+
+  <res:extended-post-card id="epc2">
+    <theme>CITYSCAPE</theme>
+    <year>1962</year>
+    <valuable>HISTORICAL</valuable>
+    <card-type>ADVERTISING</card-type>
+    <country>RUSSIA</country>
+    <author>Ivan Ivanov</author>
+  </res:extended-post-card>
+
+  <res:compact-post-card id="cpc3">
+    <theme>PEOPLE</theme>
+    <year>1988</year>
+    <valuable>THEMATIC</valuable>
+    <compact-post-code>22000</compact-post-code>
+  </res:compact-post-card>
+
+  <res:extended-post-card id="ecp3">
+    <theme>ARCHITECTURE</theme>
+    <year>1933</year>
+    <valuable>HISTORICAL</valuable>
+    <card-type>REGULAR</card-type>
+    <country>BELARUS</country>
+    <author>Boris Borda</author>
+  </res:extended-post-card>
+
+</res:cards>

@@ -25,7 +25,7 @@
         <complexContent>
             <extension base="tns:card">
                 <sequence>
-                    <element name="compact-post-code" type="string"/>
+                    <element name="compact-post-code" type="tns:code-format"/>
                 </sequence>
             </extension>
         </complexContent>
@@ -49,49 +49,56 @@
         </restriction>
     </simpleType>
 
+    <simpleType name="code-format">
+        <restriction base="unsignedInt">
+            <minInclusive value="0"/>
+            <maxInclusive value="40000"/>
+        </restriction>
+    </simpleType>
+
 
     <simpleType name="themes">
         <restriction base="string">
-            <enumeration value="CITYSCAPE"/>
-            <enumeration value="NATURE"/>
-            <enumeration value="PEOPLE"/>
-            <enumeration value="RELIGION"/>
-            <enumeration value="SPORT"/>
-            <enumeration value="ARCHITECTURE"/>
+            <enumeration value="CITYSCAPE" />
+            <enumeration value="NATURE" />
+            <enumeration value="PEOPLE" />
+            <enumeration value="RELIGION" />
+            <enumeration value="SPORT" />
+            <enumeration value="ARCHITECTURE" />
         </restriction>
     </simpleType>
 
     <simpleType name="valuables">
         <restriction base="string">
-            <enumeration value="HISTORICAL"/>
-            <enumeration value="COLLECTIBLE"/>
-            <enumeration value="THEMATIC"/>
+            <enumeration value="HISTORICAL" />
+            <enumeration value="COLLECTIBLE" />
+            <enumeration value="THEMATIC" />
         </restriction>
     </simpleType>
 
     <simpleType name="card-types">
         <restriction base="string">
-            <enumeration value="CONGRATULATORY"/>
-            <enumeration value="ADVERTISING"/>
-            <enumeration value="REGULAR"/>
+            <enumeration value="CONGRATULATORY" />
+            <enumeration value="ADVERTISING" />
+            <enumeration value="REGULAR" />
         </restriction>
     </simpleType>
 
     <simpleType name="countries">
         <restriction base="string">
-            <enumeration value="RUSSIA"/>
-            <enumeration value="BELARUS"/>
-            <enumeration value="POLAND"/>
-            <enumeration value="GERMANY"/>
-            <enumeration value="USA"/>
-            <enumeration value="CANADA"/>
-            <enumeration value="UK"/>
-            <enumeration value="FRANCE"/>
+            <enumeration value="RUSSIA" />
+            <enumeration value="BELARUS" />
+            <enumeration value="POLAND" />
+            <enumeration value="GERMANY" />
+            <enumeration value="USA" />
+            <enumeration value="CANADA" />
+            <enumeration value="UK" />
+            <enumeration value="FRANCE" />
         </restriction>
     </simpleType>
 
 
-    <element name="post-card" type="tns:card" abstract="true"/>
+    <element name="post-card" type="tns:card" abstract="true" />
     <element name="compact-post-card" type="tns:compact-post-card-type" substitutionGroup="tns:post-card"/>
     <element name="extended-post-card" type="tns:extended-post-card-type" substitutionGroup="tns:post-card"/>
 </schema>
