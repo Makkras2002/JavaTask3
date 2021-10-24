@@ -8,7 +8,7 @@ import java.time.Year;
 public class CompactPostCard extends CustomPostCard{
     private String compactPostCode;
 
-    public CompactPostCard(int id, ThemeType themeType, boolean wasSent, Year year, ValuableType valuableType, String compactPostCode) {
+    public CompactPostCard(String id, ThemeType themeType, boolean wasSent, Year year, ValuableType valuableType, String compactPostCode) {
         super(id, themeType, wasSent, year, valuableType);
         this.compactPostCode = compactPostCode;
     }

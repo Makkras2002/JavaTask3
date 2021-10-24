@@ -12,7 +12,7 @@ public class ExtendedPostCard extends CustomPostCard{
     private CountryName countryName;
     private String author;
 
-    public ExtendedPostCard(int id, ThemeType themeType, boolean wasSent, Year year, ValuableType valuableType, CardType cardType, CountryName countryName, String author) {
+    public ExtendedPostCard(String id, ThemeType themeType, boolean wasSent, Year year, ValuableType valuableType, CardType cardType, CountryName countryName, String author) {
         super(id, themeType, wasSent, year, valuableType);
         this.cardType = cardType;
         this.countryName = countryName;

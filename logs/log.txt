@@ -1,0 +1,1 @@
+2021-10-24 17:04:59 [main] [main] [25] ERROR com.makkras.task3.main.Main - Invalid XML format.

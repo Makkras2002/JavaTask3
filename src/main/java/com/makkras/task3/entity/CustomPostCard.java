@@ -6,13 +6,13 @@ import com.makkras.task3.entity.enumsource.ValuableType;
 import java.time.Year;
 
 public abstract class CustomPostCard{
-    public int id;
+    public String id;
     public ThemeType themeType;
     public boolean wasSent;
     public Year year;
     public ValuableType valuableType;
 
-    public CustomPostCard(int id, ThemeType themeType, boolean wasSent, Year year, ValuableType valuableType) {
+    public CustomPostCard(String id, ThemeType themeType, boolean wasSent, Year year, ValuableType valuableType) {
         this.id = id;
         this.themeType = themeType;
         this.wasSent = wasSent;
@@ -21,11 +21,11 @@ public abstract class CustomPostCard{
     }
     public CustomPostCard(){}
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

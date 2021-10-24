@@ -3,6 +3,13 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:res="http://www.task3.org/cards"
        xsi:schemaLocation="http://www.task3.org/cards schema.xsd">
+  <res:compact-post-card id="cpc11">
+    <theme>NATURE</theme>
+    <year>1991</year>
+    <valuable>COLLECTIBLE</valuable>
+    <compact-post-code>10102</compact-post-code>
+  </res:compact-post-card>
+
   <res:compact-post-card id="cpc1" was-sent="false">
     <theme>RELIGION</theme>
     <year>1905</year>
@@ -16,7 +23,7 @@
     <valuable>COLLECTIBLE</valuable>
     <card-type>CONGRATULATORY</card-type>
     <country>GERMANY</country>
-    <author> Iron Hans</author>
+    <author>Iron Hans</author>
   </res:extended-post-card>
 
   <res:compact-post-card id="cpc2" was-sent="false">
@@ -50,5 +57,21 @@
     <country>BELARUS</country>
     <author>Boris Borda</author>
   </res:extended-post-card>
+
+  <res:extended-post-card id="ecp4">
+    <theme>NATURE</theme>
+    <year>1939</year>
+    <valuable>COLLECTIBLE</valuable>
+    <card-type>ADVERTISING</card-type>
+    <country>POLAND</country>
+    <author>Iosif Stalin</author>
+  </res:extended-post-card>
+
+  <res:compact-post-card id="cpc4">
+    <theme>NATURE</theme>
+    <year>1909</year>
+    <valuable>THEMATIC</valuable>
+    <compact-post-code>22044</compact-post-code>
+  </res:compact-post-card>
 
 </res:cards>
