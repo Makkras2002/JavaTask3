@@ -67,11 +67,4 @@
     <author>Iosif Stalin</author>
   </res:extended-post-card>
 
-  <res:compact-post-card id="cpc4">
-    <theme>NATURE</theme>
-    <year>1909</year>
-    <valuable>THEMATIC</valuable>
-    <compact-post-code>22044</compact-post-code>
-  </res:compact-post-card>
-
 </res:cards>

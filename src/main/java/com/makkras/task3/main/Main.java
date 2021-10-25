@@ -1,6 +1,7 @@
 package com.makkras.task3.main;
 import com.makkras.task3.exception.InteractionException;
 import com.makkras.task3.parser.builder.impl.DomCardBuilder;
+import com.makkras.task3.parser.builder.impl.SaxCardBuilder;
 import com.makkras.task3.parser.builder.impl.StaxCardBuilder;
 import com.makkras.task3.validator.impl.XmlDocValidator;
 import org.apache.logging.log4j.LogManager;
@@ -19,6 +20,9 @@ public class Main {
                     StaxCardBuilder staxCardBuilder =new StaxCardBuilder();
                     staxCardBuilder.buildCardSet("sourcefile/pcard.xml");
                     logger.info(staxCardBuilder.getCards().toString());
+                    SaxCardBuilder saxCardBuilder = new SaxCardBuilder();
+                    saxCardBuilder.buildCardSet("sourcefile/pcard.xml");
+                    logger.info(saxCardBuilder.getCards().toString());
                 } catch (InteractionException e) {
                     logger.error(e.getMessage());
                 }
